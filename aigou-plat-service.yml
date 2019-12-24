@@ -1,1 +1,32 @@
-
+spring:
+  profiles:
+    active:
+      - dev
+---
+spring:
+  profiles:
+    active: dev
+  application:
+    name: AIGOU_PLAT
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #AIGOU_PLAT is registered to registration center
+  instance:
+    prefer-ip-address: true #display the client ip
+---
+spring:
+  profiles:
+    active: test
+  application:
+    name: AIGOU_PLAT
+server:
+  port: 8101
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #AIGOU_PLAT is registered to registration center
+  instance:
+    prefer-ip-address: true #display the client ip
