@@ -1,24 +1,28 @@
 spring:
   profiles:
-    active: dev
+    active:
+      - dev
+---
+spring:
+  profiles: dev
   application:
     name: AIGOU_PLAT
 server:
-  port: 8555
+  port: 8001
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka #AIGOU_PLAT is registered to registration center
   instance:
     prefer-ip-address: true #display the client ip
+    
 ---
 spring:
-  profiles:
-    active: test
+  profiles: test
   application:
     name: AIGOU_PLAT_TEST
 server:
-  port: 8222
+  port: 8101
 eureka:
   client:
     service-url:
