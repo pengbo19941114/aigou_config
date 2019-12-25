@@ -1,10 +1,5 @@
 spring:
   profiles:
-    active:
-      - dev
----
-spring:
-  profiles:
     active: dev
   application:
     name: AIGOU_PLAT
