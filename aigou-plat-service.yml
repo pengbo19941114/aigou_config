@@ -21,7 +21,7 @@ spring:
   profiles:
     active: test
   application:
-    name: AIGOU_PLAT
+    name: AIGOU_PLAT_TEST
 server:
   port: 8101
 eureka:
