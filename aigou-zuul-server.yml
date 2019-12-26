@@ -20,6 +20,5 @@ zuul:
   ignored-services: /*
   prefix: /aigou
   routes:
-    #aigou_plat: /login/**
-    plat.serviceId: aigou_plat
-    plat.path: /login/**
+    aigou_plat: /login/**
+    aigou_product: /pruduct/**
