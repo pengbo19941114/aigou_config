@@ -21,4 +21,4 @@ zuul:
   prefix: /aigou
   routes:
     aigou_plat: /login/**
-    aigou_product: /pruduct/**
+    aigou_product: /product/**
